@@ -1,0 +1,98 @@
+title: Open a smart physical safe
+
+facts:
+- careless: Humans are careless
+  from:
+  - reality
+- physical: Locks are not 100% secure
+  from:
+  - reality
+- software: Unprotected debugging interface
+  from:
+  - reality
+- network: Wireless interface
+  from:
+  - reality
+- material: Materials are not unbreakable
+  from:
+  - reality
+
+attacks:
+- luck: Find written combination
+  from:
+  - training
+- soleng: Extract combination from target
+  from:
+  - training
+  - nopostit:
+    backwards: true
+- eavesdrop: Eavesdrop combination
+  from:
+  - soleng
+- traffic: Eavesdrop traffic
+  from:
+  - network
+- mitm: Man-in-the-middle attack
+  from:
+  - tls
+- blackmail: Threaten or blackmail target
+  from:
+  - soleng
+- bribe: Bribe target
+  from:
+  - soleng
+- misintall: Improper installation
+  from:
+  - careless
+- cut_safe: Cut safe open
+  from:
+  - material
+- budget: Increase tooling budget
+  from:
+  - harden
+- exhaustive: Brute force combination
+  from:
+  - physical
+- exploit: Exploit vulnerability
+  from:
+  - software
+- 0day: Use 0-day vuln
+  from:
+  - static
+
+mitigations:
+- training: Security Training
+  from:
+  - careless
+- nopostit: No post-it policy
+  from:
+  - luck
+- harden: Harden materials
+  from:
+  - cut_safe
+- internal_only_bucket: No public system has R/W access (internal only)
+  from:
+  - software
+- static: Static analysis
+  from:
+  - exploit
+- tls: Deploy TLS
+  from:
+  - traffic
+
+goals:
+- open_safe: Open the safe (attacker win)
+  from:
+  - budget
+  - bribe
+  - blackmail
+  - eavesdrop
+  - luck
+  - exhaustive
+  - 0day
+  - mitm
+
+# filter can be used to show only paths that flow through specific nodes
+filter:
+- open_safe
+
