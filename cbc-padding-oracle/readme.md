@@ -12,8 +12,7 @@ To get started with the task, you can host a local version on your own machine (
 After you have working code, you can run against the [real target](https://cbc-rsa.netsec22.dk:8000) to recover the secret.
 
 The interaction between your code and the website is done through a cookie `authtoken` exchanged in HTTP requests.
-We suggest using the `requests` library in Python to simplify the interaction and cookie management.
-A useful example can be found in file `example.py` within this repository.
+We suggest using the `requests` library in Python (or something similar in your favorite programming language) to simplify the interaction and cookie management. A useful example illustrating the interaction can be found in file `example.py` within this repository.
 
 ## Running the Service Locally
 
