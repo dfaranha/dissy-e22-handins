@@ -18,7 +18,7 @@ The multiple coordinating computers are interconnected through a wired network. 
 
 ### Material
 
-You should use the (Deciduous tool)[https://www.deciduous.app/]. Documentation about how to use the tool can be found in (a blog post)[https://swagitda.com/blog/posts/deciduous-attack-tree-app/].
+You should use the [Deciduous tool](https://www.deciduous.app/). Documentation about how to use the tool can be found in [a blog post](https://swagitda.com/blog/posts/deciduous-attack-tree-app/).
 The tool itself has a very detailed example about accessing Amazon S3 buckets. For reference, the attack tree for the _smart_ safe example we saw in class can be found in the repository.
 
 You are free to enrich this system descriptions with additional assumptions if you want to make the scenario more challenging or tailored to your interests.
