@@ -13,6 +13,7 @@ After you have working code, you can run against the [real target](https://cbc-r
 
 The interaction between your code and the website is done through a cookie `authtoken` exchanged in HTTP requests.
 We suggest using the `requests` library in Python (or something similar in your favorite programming language) to simplify the interaction and cookie management. A useful example illustrating the interaction can be found in file `example.py` within this repository.
+For the hand-in, you should submit your source code, and a brief report (up to 2 pages) through Brightspace explaining the approach. You are free to choose your programming language for the task, so please including compile and usage instructions.
 
 ## Running the Service Locally
 
