@@ -24,19 +24,35 @@ With the given files, you can play around with the service and test your code
 locally on your own computer.  Note that all secret data has been redacted from
 the code and replaced with dummy values.
 
+#### GNU/Linux
+
 If you have installed Python 3, you can install the required packages in an
-isolated virtual environment:
+isolated virtual environment (the `#` is your command-line prompt):
 ```
-$ python -m venv venv               # (1) create a virtual environment in the directory `venv`
-$ . ./venv/bin/activate             # (2) activate the virtual environment
-$ pip install -r requirements.txt   # (3) install the required packages into the virtual environment
+# python -m venv venv               # (1) create a virtual environment in the directory `venv`
+# . ./venv/bin/activate             # (2) activate the virtual environment
+# pip install -r requirements.txt   # (3) install the required packages into the virtual environment
 ```
 To run the service you then simply execute the following:
 ```
-$ FLASK_APP=main flask run          # (4) run the application
+# FLASK_APP=main flask run          # (4) run the application
 ```
 The next time you want to run the service, you only need to repeat step (4)
 (possibly after activating the virtual environment again Step (4)).
+
+#### Windows
+
+The instructions above can be adapted to Windows PowerShell as follows:
+```
+# python -m venv venv
+# Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+# .\venv\Scripts\activate
+# pip install -r requirements.txt
+# $env:FLASK_APP="main"
+# flask run
+```
+
+#### Docker
 
 Alternatively, we also prepared a Docker container that you can use:
 ```
