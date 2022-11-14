@@ -26,4 +26,4 @@ You are free to enrich this system description with additional assumptions if yo
 ### Logistics
 
 For the hand-in, write a brief single-page report containing a description of your threat model, and include the attack tree produced by the tool.
-You can split the tree in two in case it grows too much. You can find the submission link on Brightspace.
+**Please do not just copy-paste the example and start your own tree from scratch**. You can split the tree in two in case it grows too much. You can find the submission link on Brightspace.
